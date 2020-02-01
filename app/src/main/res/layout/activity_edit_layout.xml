@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.example.winlwinoo.notice.EditLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textColor="@color/colorPrimary"
+            android:gravity="top|left"
+            android:hint="Write a new note....."
+            android:background="@android:drawable/screen_background_light_transparent"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button_background"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:text="Save"/>
+
+        <Button
+            android:id="@+id/btnCalcel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button_background"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:text="Cancel"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
